@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 It is a software system with front-end designing that helps businesses manage their human resources processes, such as employee data management.  
 HRMS systems can help businesses to automate tasks, streamline processes, and improve visibility into their workforce.
   ### Repository for back-end part:
-  * [Back-End Repository](https://github.com/nuha101/Final-Project-Backend-Java-)
+  * [Back-End Repository](https://github.com/nuha101/HRMS-APP-Back-End)
 
 ## Development server
 
