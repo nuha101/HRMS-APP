@@ -14,10 +14,9 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 # Table Of Content
 1. [Setup](#setup)
 2. [Routes](#routes)
-4. [Extra links(Trello, Presentation Slides, etc…)](#extra-links)
-5. [Future Work](#future-work)
-6. [Resources](#resources)
-7. [Owner](#owner)
+3. [Future Work](#future-work)
+4. [Resources](#resources)
+5. [Owner](#owner)
 
 ## Setup:
 
