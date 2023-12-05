@@ -44,8 +44,6 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
    * `/employee-list`: Delete employee by click on delete button for that employee.
    
 
-## Extra links:
-* [My presentation on slides.com]()
 
 ## Future Work:
 
