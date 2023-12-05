@@ -1,0 +1,41 @@
+<app-header></app-header>
+<div class="container">
+    <h2> Add New Employee </h2>
+    <form>
+      <div>
+        <label for="First Name">First Name</label>
+        <input type="text" id="firstName" name="firstName" [(ngModel)]="firstName" required>
+      </div>
+  
+      <div>
+        <label for="Last Name">Last Name</label>
+        <input type="text" id="lastName" name="lastName" [(ngModel)]="lastName" required>
+      </div>
+  
+      <div>
+        <label for="Salary">Salary</label>
+        <input type="number" id="salary" name="salary" [(ngModel)]="salary" required>
+      </div>
+  
+      <div>
+        <label for="isAdmin">Are you admin?</label>
+        <input type="checkbox" id="isAdmin" name="isAdmin" [(ngModel)]="isAdmin" required>
+      </div>
+  
+      <div>
+        <label for="Company">Company</label>
+        <input type="number" id="companyId" name="companyId" [(ngModel)]="companyId" required>
+      </div>
+  
+      <div>
+        <label for="Department">Department</label>
+        <input type="number" id="departmentId" name="departmentId" [(ngModel)]="departmentId" required>
+      </div>
+  
+      <div class="message" *ngIf="message">
+        {{ message }}
+      </div>
+      <button type="submit" (click)="addEmployee()">Add</button>
+      
+    </form>
+  </div>

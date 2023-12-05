@@ -1,0 +1,48 @@
+<app-header></app-header>
+
+<!-- Main Section -->
+
+<section class="main" id="#main">
+  <div class="about">
+    <h2>Human Resource Management System</h2>
+    <p>This is a great system to control and manage your company.</p>
+    <button (click)="onGetStarted()" id="btn">Get Started</button>
+  </div>
+</section>
+
+<!-- Services Section -->
+
+<section class="cards" id="services">
+  <h2 class="title">Services</h2>
+  <div class="content">
+    <!-- Get companies list -->
+
+    <div class="card">
+      <div class="info">
+        <a mat-button routerLink="/company-list">
+          <h3>Companies</h3>
+        </a>
+      </div>
+    </div>
+
+    <!-- Get departments list -->
+
+    <div class="card">
+      <div class="info">
+        <a routerLink="/department-list">
+          <h3>Departments</h3>
+        </a>
+      </div>
+    </div>
+
+    <!-- Get employees list  -->
+
+    <div class="card">
+      <div class="info">
+        <a routerLink="/employee-list">
+          <h3>Employees</h3>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

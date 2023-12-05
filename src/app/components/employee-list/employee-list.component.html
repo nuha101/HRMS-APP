@@ -1,0 +1,41 @@
+<app-header></app-header>
+<section class="employees">
+  <h2 class="title">Employees</h2>
+  <div class="addButton">
+    <button id="add" routerLink="/new-employee">+ Add New</button>
+  </div>
+  <div class="container">
+    <div class="content" *ngFor="let employee of employees">
+      <div class="card" [ngClass]="{ editing: employee.editing }">
+        <div class="info">
+          <a mat-button routerLink="/employee/{{ employee.id }}">
+            <h3>
+              {{ employee.employeeInfo.firstName }} 
+              {{ employee.employeeInfo.lastName }}
+            </h3>
+          </a>
+          <p>Company: {{ employee.company?.name ?? 'N/A' }}</p>
+          
+          <button id="edit" (click)="toggleEdit(employee)">Edit</button>
+          <button id="warn" (click)="removeEmployee(employee.id)">
+            Remove
+          </button>
+        </div>
+        <div class="edit-form" [hidden]="!employee.editing">
+          <input
+            type="text"
+            id="firstNameInput-{{ employee.id }}"
+            [(ngModel)]="employee.employeeInfo.firstName"
+          />
+          <input
+            type="text"
+            id="lastNameInput-{{ employee.id }}"
+            [(ngModel)]="employee.employeeInfo.lastName"
+          />
+          <button id="save" (click)="editEmployee(employee)">Save</button>
+          <button id="cancel" (click)="toggleEdit(employee)">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,36 @@
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: medium;
+  }
+  
+  
+   #btn {
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    height: 40px;
+    width: 80px;
+    background-color: #f5fbf4;
+    text-align: center;
+    color: #0b1608;
+    border-color: #e3b5d4;
+    cursor: pointer;
+  }
+  
+  
+  
+  header mat-icon {
+    color: #4a1c3b;
+    padding: 20px;
+  }
+  
+  header mat-icon:hover {
+    cursor: pointer;
+  }
+  

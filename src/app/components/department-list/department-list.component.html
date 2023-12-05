@@ -1,0 +1,16 @@
+<app-header></app-header>
+
+<section class="departments">
+  <h2 class="title">Departments</h2>
+  <div class="container">
+    <div class="content" *ngFor="let department of departments">
+      <div class="card">
+        <div class="info">
+          <h3>
+            <b>{{ department.name }}</b>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

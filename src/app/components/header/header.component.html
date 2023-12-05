@@ -1,0 +1,15 @@
+<header>
+  <mat-icon
+    aria-hidden="false"
+    aria-label="Example home icon"
+    fontIcon="home"
+    (click)="onBackToHome()"
+  ></mat-icon>
+
+  <nav class="navigation">
+    <button  (click)="onGetStarted()" id="btn">Services</button>
+
+    <!-- <button *ngIf="loggedName" (click)="logout()"  id="btn">{{ loggedName }} Logout</button> -->
+    <!-- <button *ngIf="!loggedName" routerLink="/login"  id="btn">Login</button> -->
+  </nav>
+</header>

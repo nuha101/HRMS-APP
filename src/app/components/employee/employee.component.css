@@ -1,0 +1,38 @@
+section{
+
+    padding: 60px;
+    
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #61286c;
+    font-size: 2.2em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.info a, h3, p{
+    color:#896ac8;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card {
+    background-color: #f5fbf4;
+    width: 18em;
+    box-shadow: 0 5px 25px rgba(190, 89, 195, 0.232);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    
+}
+

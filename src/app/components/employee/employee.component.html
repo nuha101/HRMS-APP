@@ -1,0 +1,18 @@
+<app-header></app-header>
+<section class="employee">
+    <h2 class="title">Employee Information</h2>
+    <div class="content">
+      <div class="card">
+        <div class="info">
+          <a mat-button *ngIf="employee">
+            <h3><b>{{employee.employeeInfo.firstName}}  {{ employee.employeeInfo.lastName }} </b></h3>
+            <p>Company: {{ employee.company?.name ?? 'N/A' }}</p>
+            <p>Department: {{ employee.department.name }}</p>
+            <p>{{ employee.employeeInfo.salary }}</p>
+            <p *ngIf="employee.employeeInfo.isAdmin">Admin</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  

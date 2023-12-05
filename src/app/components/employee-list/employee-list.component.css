@@ -1,0 +1,112 @@
+section{
+
+    padding: 60px;
+    
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    color: #61286c;
+    font-size: 2.2em;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.info a, h3, p{
+    color:#61286c;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.card {
+    background-color: #f5fbf4;
+    width: 18em;
+    box-shadow: 0 5px 25px rgba(190, 89, 195, 0.232);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+.addButton{
+    display: flex;
+    justify-content: flex-end;
+}
+#add{
+    background-color: #f5fbf4;
+    text-align: center;
+    color: #0b1608;
+    border-color: #e3b5d4;;
+    cursor: pointer;
+    width: 10em;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px; 
+
+}
+
+
+#warn, #cancel{
+
+    cursor: pointer;
+    border: none;
+    background-color: #cc93d7;
+    width: 6em;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    transition: 0.7s ease;
+
+}
+
+#warn:hover, #cancel:hover {
+    transform: scale(1.1);
+}
+
+#edit, #save{
+
+    cursor: pointer;
+    border: none;
+    background-color: #896ac8;
+    width: 6em;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    transition: 0.7s ease;
+
+}
+
+#edit:hover, #save:hover {
+    transform: scale(1.1);
+}
+
+.card.editing .info {
+    display: none;
+  }
+  
+  .card.editing .edit-form {
+    display: block;
+  }
+  

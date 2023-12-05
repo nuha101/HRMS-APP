@@ -1,0 +1,23 @@
+<app-header></app-header>
+
+<section class="companies">
+  <h2 class="title">Companies </h2>
+
+  <div class="container">
+  <div class="content" *ngFor="let company of companies">
+    <div class="card">
+      <div class="info">
+          <h3><b>Name: </b> {{company.name}}</h3>
+          <p><b>Number of Departments: </b>{{company.numOfDepartment}}</p>
+          <p><b>Number of Employees: </b>{{company.numOfEmployee}}</p>
+          <p><b>Departments: </b></p>
+          <div class="list" *ngFor="let department of company.departmentList">
+          <ul>
+            <li>{{department.name}}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
